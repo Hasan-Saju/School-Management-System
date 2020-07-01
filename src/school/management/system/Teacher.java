@@ -27,11 +27,13 @@ public class Teacher {
     }
 
     //only salary will change by time
-    public void setSalary(int salary) {
+    public void setSalary(int salary)
+    {
         this.salary = salary;
     }
 
-    public int getSalary() {
+    public int getSalary()
+    {
         return salary;
     }
 
