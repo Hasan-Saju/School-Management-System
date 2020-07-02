@@ -27,9 +27,9 @@ public class Main {
         System.out.println("Money Earned by Rajuk School: "+Rajuk.getTotalMoneyEarned());
         Saju.payfees(15000);
 
-        Teacher Faisal=new Teacher(9,""Faisal,4000);
+        Teacher Faisal=new Teacher(9,"Faisal",4000);
         Rajuk.addTeachers(Faisal);
-        
+
         Zafrin.payfees(14000);
         System.out.println("Money Earned by Rajuk School: "+Rajuk.getTotalMoneyEarned());
 
