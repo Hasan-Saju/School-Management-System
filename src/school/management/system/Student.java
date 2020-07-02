@@ -9,7 +9,7 @@ public class Student {
     private int feesTotal;
 
     //initialize the object
-    //grade means class
+    //grade means which class the student study in
     //Fees for every student is 22000Tk
     //intially fees paid=0
     public Student(int id, String name, int grade)

@@ -24,21 +24,24 @@ public class Main {
         studentList.add(Zafrin);
 
         School Rajuk= new School(teacherList,studentList);
+
+        //before starting any transacyion
         System.out.println("Money Earned by Rajuk School: "+Rajuk.getTotalMoneyEarned());
-        Saju.payfees(15000);
+        Saju.payfees(15000);        //student pay his fees
+
 
         Teacher Faisal=new Teacher(9,"Faisal",4000);
-        Rajuk.addTeachers(Faisal);
+        Rajuk.addTeachers(Faisal);    // add a new teacher
 
-        Zafrin.payfees(14000);
-        System.out.println("Money Earned by Rajuk School: "+Rajuk.getTotalMoneyEarned());
+        Zafrin.payfees(14000);         //another student paying her fees
+        System.out.println("\nMoney Earned by Rajuk School: "+Rajuk.getTotalMoneyEarned());   //15000
 
-        System.out.println("Starting to pay Salary");
+        System.out.println("\nStarting to pay Salary");
         Hasan.receiveSalary(Hasan.getSalary());
-        System.out.println("Rajuk spent for salary for Saju : "+Rajuk.getTotalMoneySpent()+" Remaining amount is : "+ (Rajuk.getTotalMoneyEarned()-Rajuk.getTotalMoneySpent()) );
+        System.out.println("Rajuk spent for salary for Saju : "+Rajuk.getTotalMoneySpent()+"\nRemaining amount is : "+ (Rajuk.getTotalMoneyEarned()-Rajuk.getTotalMoneySpent()) );
 
-        Anika.receiveSalary(Anika.getSalary());
-        System.out.println(Anika.getName()+" got her salary.");
+        Anika.receiveSalary(Anika.getSalary());     //Another teacher get her salary 8000 Taka
+        System.out.println("\n"+Anika.getName()+" got her salary: "+Anika.getSalary()+" Tk");
         System.out.println("Now the balance for school is: "+(Rajuk.getTotalMoneyEarned()-Rajuk.getTotalMoneySpent()));
 
 
